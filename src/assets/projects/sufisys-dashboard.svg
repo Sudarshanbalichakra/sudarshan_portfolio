@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="1200" height="750" fill="none" stroke="#334155" stroke-width="1.5" rx="16"/>
+
+  <!-- Top Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a" fill-opacity="0.95"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Logo & App Title -->
+  <rect x="24" y="16" width="34" height="34" rx="8" fill="url(#cyanGrad)"/>
+  <text x="41" y="38" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">S</text>
+  <text x="68" y="39" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="19" font-weight="700">SufiSys</text>
+  <rect x="145" y="20" width="105" height="24" rx="12" fill="#0284c7" fill-opacity="0.2"/>
+  <text x="197" y="36" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">FINANCE SaaS</text>
+
+  <!-- Tenant Switcher Dropdown (Key Multi-tenant feature) -->
+  <rect x="280" y="14" width="320" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="298" cy="32" r="5" fill="#10b981"/>
+  <text x="312" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Tenant:</text>
+  <text x="360" y="36" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Apex MicroFinance (Branch 01)</text>
+  <path d="M 580 30 L 585 36 L 590 30" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Right side header elements -->
+  <rect x="940" y="16" width="140" height="32" rx="6" fill="#065f46" fill-opacity="0.4" stroke="#059669" stroke-width="1"/>
+  <text x="1010" y="36" fill="#34d399" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">● Live DB Connected</text>
+  <circle cx="1115" cy="32" r="16" fill="#334155"/>
+  <text x="1115" y="37" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">SB</text>
+  <text x="1145" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Admin</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="64" width="220" height="686" fill="#0c1322" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Sidebar items -->
+  <g transform="translate(16, 88)">
+    <rect x="0" y="0" width="188" height="38" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4"/>
+    <text x="40" y="24" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">📊 Overview &amp; KPIs</text>
+
+    <text x="40" y="68" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">👥 Customer Profiles</text>
+    <text x="40" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">💳 Loan Lifecycle</text>
+    <text x="40" y="156" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">📥 Daily Collections</text>
+    <text x="40" y="200" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">🪙 Pigmy Accounts</text>
+    <text x="40" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">⚖️ Settlements &amp; EMI</text>
+    <text x="40" y="288" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">📑 Expense Manager</text>
+    <text x="40" y="332" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">📱 Field Agent App</text>
+    <text x="40" y="376" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">⚙️ Tenant Settings</text>
+  </g>
+
+  <!-- Sidebar bottom tenant-isolation badge -->
+  <rect x="16" y="620" width="188" height="96" rx="8" fill="#111827" stroke="#1f2937"/>
+  <text x="28" y="644" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">MULTI-TENANT ARCH</text>
+  <text x="28" y="664" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Isolated Org Database</text>
+  <text x="28" y="680" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">NestJS JWT Auth Guard</text>
+  <text x="28" y="696" fill="#34d399" font-family="system-ui, sans-serif" font-size="10">✓ 100% Data Separation</text>
+
+  <!-- Main Content Area -->
+  <!-- Top Stat Cards -->
+  <g transform="translate(244, 84)">
+    <!-- Card 1: Total Disbursed -->
+    <rect x="0" y="0" width="220" height="110" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">TOTAL DISBURSED LOANS</text>
+    <text x="16" y="62" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="24" font-weight="700">₹ 4.82 Cr</text>
+    <rect x="16" y="74" width="70" height="20" rx="10" fill="#065f46" fill-opacity="0.5"/>
+    <text x="51" y="88" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">↑ +14.2% MoM</text>
+    <text x="96" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">342 Active</text>
+
+    <!-- Card 2: Daily Collections -->
+    <rect x="236" y="0" width="220" height="110" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="252" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">TODAY'S COLLECTIONS</text>
+    <text x="252" y="62" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="24" font-weight="700">₹ 3,48,250</text>
+    <rect x="252" y="74" width="86" height="20" rx="10" fill="#0369a1" fill-opacity="0.3"/>
+    <text x="295" y="88" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">96.7% Target</text>
+    <text x="348" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">18 Agents</text>
+
+    <!-- Card 3: Pigmy Savings Deposit -->
+    <rect x="472" y="0" width="220" height="110" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="488" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">PIGMY SAVINGS POOL</text>
+    <text x="488" y="62" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="24" font-weight="700">₹ 89.4 Lakhs</text>
+    <rect x="488" y="74" width="94" height="20" rx="10" fill="#581c87" fill-opacity="0.4"/>
+    <text x="535" y="88" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">1,420 Accounts</text>
+    <text x="592" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">Daily Rec</text>
+
+    <!-- Card 4: Overdue & Settlements -->
+    <rect x="708" y="0" width="220" height="110" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="724" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">SETTLEMENT RATE</text>
+    <text x="724" y="62" fill="#34d399" font-family="system-ui, sans-serif" font-size="24" font-weight="700">98.4 %</text>
+    <rect x="724" y="74" width="80" height="20" rx="10" fill="#065f46" fill-opacity="0.5"/>
+    <text x="764" y="88" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Low Default</text>
+    <text x="814" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">0.8% NPA</text>
+  </g>
+
+  <!-- Middle Section: Chart & Analytics -->
+  <g transform="translate(244, 214)">
+    <rect x="0" y="0" width="580" height="230" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Daily Collections Velocity vs Weekly Targets</text>
+    <text x="20" y="50" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Automated real-time reconciliation across 18 collection managers</text>
+
+    <!-- Chart Grid lines -->
+    <line x1="20" y1="90" x2="560" y2="90" stroke="#1e293b" stroke-width="1" stroke-dasharray="4"/>
+    <line x1="20" y1="130" x2="560" y2="130" stroke="#1e293b" stroke-width="1" stroke-dasharray="4"/>
+    <line x1="20" y1="170" x2="560" y2="170" stroke="#1e293b" stroke-width="1" stroke-dasharray="4"/>
+    <line x1="20" y1="205" x2="560" y2="205" stroke="#334155" stroke-width="1"/>
+
+    <!-- Chart Line & Area -->
+    <path d="M 30 185 Q 80 160 130 140 T 230 110 T 330 125 T 430 78 T 530 65 L 530 205 L 30 205 Z" fill="url(#chartArea)"/>
+    <path d="M 30 185 Q 80 160 130 140 T 230 110 T 330 125 T 430 78 T 530 65" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Data points -->
+    <circle cx="130" cy="140" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="230" cy="110" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="330" cy="125" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="430" cy="78" r="4" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="530" cy="65" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Current Tag -->
+    <rect x="475" y="40" width="76" height="20" rx="4" fill="#0284c7"/>
+    <text x="513" y="54" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">₹ 3.48 Lakhs</text>
+
+    <!-- X labels -->
+    <text x="30" y="222" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Mon</text>
+    <text x="130" y="222" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Tue</text>
+    <text x="230" y="222" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Wed</text>
+    <text x="330" y="222" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Thu</text>
+    <text x="430" y="222" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Fri</text>
+    <text x="530" y="222" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Today</text>
+  </g>
+
+  <!-- Right Distribution Widget -->
+  <g transform="translate(840, 214)">
+    <rect x="0" y="0" width="330" height="230" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Portfolio Distribution</text>
+    <text x="20" y="50" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Loan schemes &amp; savings types</text>
+
+    <g transform="translate(20, 75)">
+      <!-- Item 1 -->
+      <text x="0" y="12" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Pigmy Micro-Savings (Daily)</text>
+      <text x="250" y="12" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">42%</text>
+      <rect x="0" y="20" width="280" height="6" rx="3" fill="#1e293b"/>
+      <rect x="0" y="20" width="118" height="6" rx="3" fill="#38bdf8"/>
+
+      <!-- Item 2 -->
+      <text x="0" y="48" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Small Business Commercial Loans</text>
+      <text x="250" y="48" fill="#34d399" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">31%</text>
+      <rect x="0" y="56" width="280" height="6" rx="3" fill="#1e293b"/>
+      <rect x="0" y="56" width="87" height="6" rx="3" fill="#34d399"/>
+
+      <!-- Item 3 -->
+      <text x="0" y="84" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Personal &amp; Emergency Micro-loans</text>
+      <text x="250" y="84" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">18%</text>
+      <rect x="0" y="92" width="280" height="6" rx="3" fill="#1e293b"/>
+      <rect x="0" y="92" width="50" height="6" rx="3" fill="#a78bfa"/>
+
+      <!-- Item 4 -->
+      <text x="0" y="120" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Vehicle &amp; Equipment Finance</text>
+      <text x="250" y="120" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">9%</text>
+      <rect x="0" y="128" width="280" height="6" rx="3" fill="#1e293b"/>
+      <rect x="0" y="128" width="25" height="6" rx="3" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <!-- Bottom Table: Real-Time Collections & Loan Transactions -->
+  <g transform="translate(244, 462)">
+    <rect x="0" y="0" width="926" height="260" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Table Header Bar -->
+    <text x="20" y="32" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Active Tenant Transactions &amp; Field Collections</text>
+    <text x="650" y="32" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Auto-refresh: 15s • NestJS API</text>
+
+    <!-- Table Columns -->
+    <rect x="16" y="50" width="894" height="32" rx="6" fill="#1e293b"/>
+    <text x="32" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">ACCOUNT / LOAN ID</text>
+    <text x="220" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CUSTOMER NAME</text>
+    <text x="400" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">MODULE / TYPE</text>
+    <text x="560" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">AMOUNT</text>
+    <text x="690" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FIELD AGENT</text>
+    <text x="830" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">STATUS</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(16, 92)">
+      <text x="16" y="20" fill="#38bdf8" font-family="monospace" font-size="11.5">LN-2026-9042</text>
+      <text x="204" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Ramesh Pattar</text>
+      <text x="384" y="20" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Daily Loan EMI</text>
+      <text x="544" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">₹ 2,500</text>
+      <text x="674" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5">Vijay Kumar (#04)</text>
+      <rect x="806" y="6" width="70" height="20" rx="10" fill="#065f46" fill-opacity="0.5"/>
+      <text x="841" y="20" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Collected</text>
+    </g>
+    <line x1="16" y1="126" x2="910" y2="126" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Row 2 -->
+    <g transform="translate(16, 134)">
+      <text x="16" y="20" fill="#a78bfa" font-family="monospace" font-size="11.5">PG-2026-1189</text>
+      <text x="204" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Sunita Deshmukh</text>
+      <text x="384" y="20" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Pigmy Deposit</text>
+      <text x="544" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">₹ 500</text>
+      <text x="674" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5">Anil Rathod (#02)</text>
+      <rect x="806" y="6" width="70" height="20" rx="10" fill="#065f46" fill-opacity="0.5"/>
+      <text x="841" y="20" fill="#34d399" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Deposited</text>
+    </g>
+    <line x1="16" y1="168" x2="910" y2="168" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Row 3 -->
+    <g transform="translate(16, 176)">
+      <text x="16" y="20" fill="#38bdf8" font-family="monospace" font-size="11.5">LN-2026-8812</text>
+      <text x="204" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Kavita Rao</text>
+      <text x="384" y="20" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Loan Settlement</text>
+      <text x="544" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">₹ 45,000</text>
+      <text x="674" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5">Main Branch Admin</text>
+      <rect x="806" y="6" width="70" height="20" rx="10" fill="#1e3a8a" fill-opacity="0.5"/>
+      <text x="841" y="20" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Closed / NOC</text>
+    </g>
+    <line x1="16" y1="210" x2="910" y2="210" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Row 4 -->
+    <g transform="translate(16, 218)">
+      <text x="16" y="20" fill="#f59e0b" font-family="monospace" font-size="11.5">EX-2026-0314</text>
+      <text x="204" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Office Fuel &amp; Travel</text>
+      <text x="384" y="20" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11.5">Branch Expense</text>
+      <text x="544" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">₹ 1,850</text>
+      <text x="674" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11.5">Branch Accountant</text>
+      <rect x="806" y="6" width="70" height="20" rx="10" fill="#451a03" fill-opacity="0.5"/>
+      <text x="841" y="20" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Audited</text>
+    </g>
+  </g>
+
+  <!-- Watermark / Swap Note Helper -->
+  <rect x="420" y="718" width="360" height="24" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="600" y="734" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">✨ SufiSys Live Web Dashboard Mockup (Replaceable in assets/projects)</text>
+</svg>
