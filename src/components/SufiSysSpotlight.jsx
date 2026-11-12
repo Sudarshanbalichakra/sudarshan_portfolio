@@ -7,9 +7,7 @@ import {
   Smartphone,
   ShieldCheck,
   CloudLightning,
-  Sparkles,
   CheckCircle2,
-  Image as ImageIcon,
   ZoomIn,
   X,
   Laptop,
@@ -159,22 +157,22 @@ export default function SufiSysSpotlight() {
               ))}
             </div>
 
-            {/* Replaceable Note Pill */}
+            {/* Live Application Screenshots Pill */}
             <div
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.4rem',
                 fontSize: '0.78rem',
-                color: 'var(--text-muted)',
-                background: 'rgba(15, 23, 42, 0.8)',
+                color: 'var(--accent-emerald-light)',
+                background: 'rgba(16, 185, 129, 0.12)',
                 padding: '0.35rem 0.8rem',
                 borderRadius: '6px',
-                border: '1px solid var(--border-subtle)',
+                border: '1px solid rgba(16, 185, 129, 0.3)',
               }}
             >
-              <ImageIcon size={14} color="var(--accent-amber)" />
-              <span>Dummy UI Preview (Ready for original screenshots)</span>
+              <CheckCircle2 size={14} color="var(--accent-emerald-light)" />
+              <span>Live Application Screenshots Active</span>
             </div>
           </div>
 
@@ -234,38 +232,7 @@ export default function SufiSysSpotlight() {
             </button>
           </div>
 
-          {/* Caption & Swapping Instructions Banner */}
-          <div
-            style={{
-              marginTop: '1.25rem',
-              display: 'flex',
-              flexWrap: 'wrap',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              gap: '1rem',
-              padding: '0.85rem 1.25rem',
-              background: 'rgba(15, 23, 42, 0.6)',
-              borderRadius: '8px',
-              border: '1px solid var(--border-subtle)',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              <Sparkles size={16} color="var(--accent-cyan-light)" />
-              <span style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
-                <strong>{currentTab.label}:</strong> {currentTab.caption}
-              </span>
-            </div>
 
-            <div
-              style={{
-                fontSize: '0.78rem',
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--accent-amber)',
-              }}
-            >
-              Tip: Replace <code>{activeTab}.svg</code> in <code>src/assets/projects/</code> anytime
-            </div>
-          </div>
         </div>
 
         {/* 6 Key Architectural Modules Grid */}

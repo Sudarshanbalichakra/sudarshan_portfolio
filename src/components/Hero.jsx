@@ -1,28 +1,14 @@
-import { useState } from 'react'
 import {
   ArrowRight,
   Mail,
-  Phone,
   MapPin,
-  Check,
-  Copy,
   Terminal,
-  ExternalLink,
   Layers,
   Sparkles,
 } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from './Icons'
 import { personalInfo } from '../data/portfolioData'
 
 export default function Hero() {
-  const [copiedEmail, setCopiedEmail] = useState(false)
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email)
-    setCopiedEmail(true)
-    setTimeout(() => setCopiedEmail(false), 2500)
-  }
-
   return (
     <section
       id="about"
@@ -106,7 +92,7 @@ export default function Hero() {
             </p>
 
             {/* CTAs */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.9rem', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.9rem' }}>
               <a href="#sufisys" className="btn btn-primary" style={{ padding: '0.85rem 1.75rem', fontSize: '1rem' }}>
                 <Layers size={18} />
                 Explore SufiSys SaaS
@@ -122,73 +108,6 @@ export default function Hero() {
                 style={{ padding: '0.85rem 1.4rem', fontSize: '0.95rem' }}
               >
                 View Experience
-              </a>
-            </div>
-
-            {/* Social & Contact Direct Links */}
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                alignItems: 'center',
-                gap: '1rem',
-                paddingTop: '1.5rem',
-                borderTop: '1px solid var(--border-subtle)',
-              }}
-            >
-              {/* GitHub */}
-              <a
-                href={personalInfo.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-secondary"
-                style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem' }}
-                title="View GitHub Profile"
-              >
-                <GithubIcon size={16} />
-                GitHub
-                <ExternalLink size={12} opacity={0.7} />
-              </a>
-
-              {/* LinkedIn */}
-              <a
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-secondary"
-                style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem' }}
-                title="View LinkedIn Profile"
-              >
-                <LinkedinIcon size={16} color="#0a66c2" />
-                LinkedIn
-                <ExternalLink size={12} opacity={0.7} />
-              </a>
-
-              {/* Email Copy Pill */}
-              <button
-                onClick={handleCopyEmail}
-                className="btn btn-outline"
-                style={{
-                  padding: '0.5rem 0.9rem',
-                  fontSize: '0.85rem',
-                  color: copiedEmail ? 'var(--accent-emerald-light)' : 'inherit',
-                  borderColor: copiedEmail ? 'var(--accent-emerald)' : undefined,
-                }}
-                title="Click to copy email address"
-              >
-                {copiedEmail ? <Check size={15} color="#34d399" /> : <Copy size={15} />}
-                {copiedEmail ? 'Copied Email!' : personalInfo.email}
-              </button>
-
-              {/* Phone Direct */}
-              <a
-                href={`tel:${personalInfo.phone}`}
-                className="btn btn-outline"
-                style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem' }}
-                title="Call phone"
-              >
-                <Phone size={15} color="var(--accent-cyan-light)" />
-                {personalInfo.formattedPhone}
               </a>
             </div>
           </div>

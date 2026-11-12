@@ -1,6 +1,6 @@
-import sufisysDashboardImg from '../assets/projects/sufisys-dashboard.svg'
-import sufisysPigmyImg from '../assets/projects/sufisys-pigmy.svg'
-import sufisysMobileImg from '../assets/projects/sufisys-mobile.svg'
+import sufisysDashboardImg from '../assets/projects/sufisys-dashboard.png'
+import sufisysPigmyImg from '../assets/projects/sufisys-pigmy.png'
+import sufisysMobileImg from '../assets/projects/sufisys-mobile.png'
 
 export const personalInfo = {
   name: "Sudarshan Balichakra",
@@ -130,8 +130,7 @@ export const sufisysProject = {
     dashboard: sufisysDashboardImg,
     pigmy: sufisysPigmyImg,
     mobile: sufisysMobileImg,
-    // Note for the user: To swap with real screenshots, save your images in src/assets/projects/ and update the paths above!
-    note: "Dummy mockups generated. You can easily swap these later with your real application photos."
+    note: "Original application photos loaded."
   },
   modules: [
     {
